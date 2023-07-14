@@ -1,0 +1,197 @@
+@import "../variables-site/variables";
+
+ol.breadcrumb {
+	flex-wrap: nowrap;
+	.breadcrumb-item.active {
+		flex: 1;
+	}
+}
+
+.site-qa-detail {
+	padding-bottom: 0;
+	.option-change-font-size {
+		flex-shrink: 0;
+		margin-left: 5rem;
+
+		@media (max-width: 991px) {
+			margin-left: 0;
+		}
+	}
+	.qa-post {
+		margin-bottom: 3rem;
+		padding: 1rem 1.6rem 3rem;
+		border: 1px solid $color-second;
+		border-radius: 5px;
+		
+		img {
+			cursor: pointer;
+		}
+
+		.heading {
+			margin-bottom: 0.8rem;
+			font-size: $font-size-second;
+
+			p {
+				margin-bottom: 0;
+			}
+
+			.cate {
+				color: $color-second;
+
+                span {
+                    position: relative;
+            
+                    ~span {
+                        margin-left: 0.5rem;
+            
+                        &:before {
+                            position: absolute;
+                            content: ",";
+                            left: -0.8rem;
+                            bottom: 0;
+                        }
+                    }
+                }
+			}
+
+			.date {
+				color: $color-third;
+			}
+		}
+
+		.title {
+			position: relative;
+			margin-bottom: 1.5rem;
+			padding: 1.2rem 1.5rem 1.2rem 5rem;
+			font-weight: 400;
+			font-size: 1.8rem;
+			border-radius: 3px;
+			background-color: #F5F6FA;
+
+			&:before {
+            position: absolute;
+            // content: "";
+            top: 1.1rem;
+            left: 1.5rem;
+            @include square(20px, 50%);
+            border: 2px solid $background-primary;
+          }
+          
+          &:after {
+			position: absolute;
+			content: "Q";
+			top: 0.2rem;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			left: 1.3rem;
+			color: $color-second;
+			font-size: 3.0rem;
+			font-weight: 600;
+          }
+		}
+
+		.content {
+			position: relative;
+			padding: 0 1.5rem 0 5rem;
+
+            &:after {
+				position: absolute;
+				content: "A";
+				top: -1rem;
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				left: 1.3rem;
+				color: $color-second;
+				font-size: 3.0rem;
+				font-weight: 600;
+            }
+
+			p {
+				margin-bottom: 0;
+
+				+p {
+					margin-top: 3rem;
+				}
+			}
+		}
+	}
+
+	.btn-add-favorite {
+		padding: 0.8rem 3.8rem;
+		color: $color-four;
+		font-size: 2rem;
+		border: 1px solid $color-four;
+		@include transition();
+
+		span {
+			~span {
+				margin-left: 0.8rem;
+			}
+		}
+
+		&:hover,
+		&.active {
+			color: $color-white;
+			background-color: $color-four;
+		}
+
+		@media (max-width: 575px) {
+			padding: 0.8rem 1rem;
+			font-size: 1.6rem;
+		}
+	}
+
+	.question {
+		padding: 1.6rem 5rem 3rem 1.6rem;
+
+		&__form {
+			.comment {
+				margin-bottom: 0.6rem;
+				height: 130px;
+			}
+
+			.note {
+				margin-bottom: 3.2rem;
+				color: $color-third;
+			}
+
+			.btn-submit-question {
+				padding: 0.55rem 3.8rem;
+				border-radius: 3px;
+				border: 1px solid $color-third;
+				background-color: #f5f6fa;
+				@include transition();
+
+				&:hover {
+					color: $color-white;
+					border-color: $background-primary;
+					background-color: $background-primary;
+				}
+			}
+
+			@media (min-width: 768px) {
+				@include grid-columns(3rem 4.8rem, auto 1fr);
+			}
+
+			@media (max-width: 767px) {
+				.left {
+					margin-bottom: 2.4rem;
+				}
+			}
+		}
+
+		@media (max-width: 991px) {
+			padding: 1.6rem;
+		}
+	}
+
+	.related-question {
+		padding: 1.6rem 5rem 3rem 1.6rem;
+	}
+
+	.custom-list-group {
+		margin-top: 2.5rem;
+	}
+}
+
+.modal-lg, .modal-xl {
+	--bs-modal-width: 980px;
+}

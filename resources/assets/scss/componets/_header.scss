@@ -1,0 +1,28 @@
+.header-global {
+  padding: 1.8rem 0;
+  background-color: $color-white;
+  box-shadow: 0 3px 5px #0000001F;
+  
+  &__nav {
+	height: inherit;
+	
+	@media (min-width: 480px) {
+	  @include grid-columns(1.2rem, 150px 1fr);
+	}
+	
+	@media (max-width: 479px) {
+	  @include grid-columns(1.2rem, 100px 1fr);
+	}
+  }
+  
+  .info {
+	font-size: 1.6rem;
+	color: $color-third;
+	
+	.mail {}
+ 
+	@media (max-width: 479px) {
+	  font-size: 1.3rem;
+	}
+  }
+}

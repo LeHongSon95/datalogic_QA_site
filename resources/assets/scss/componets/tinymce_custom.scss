@@ -1,0 +1,45 @@
+.tox-tbtn[aria-label="Increase Font Size"] .tox-icon svg,
+// .tox-split-button[aria-label="Text color"] .tox-icon svg,
+.tox-tbtn[aria-label="Clear formatting"] .tox-icon svg {
+    display: none;
+}
+
+.tox-tbtn[aria-label="Increase Font Size"] .tox-icon,
+// .tox-split-button[aria-label="Text color"] .tox-icon,
+.tox-tbtn[aria-label="Clear formatting"] .tox-icon {
+    display: list-item;
+    list-style: none;
+    width: 15px;
+    height: 15px;
+}
+
+[aria-label='Increase Font Size'].tox-tbtn .tox-icon,
+// [aria-label='Text color'].tox-split-button .tox-icon,
+[aria-label='Clear formatting'].tox-tbtn .tox-icon {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+[aria-label='Increase Font Size'].tox-tbtn .tox-icon {
+    background-image: url('../../../../public/images/icons/changeSize.svg');
+}
+
+// [aria-label='Text color'].tox-split-button .tox-icon {
+//     background-image: url('../../../../public/images/icons/filter.svg');
+// }
+
+[aria-label='Clear formatting'].tox-tbtn .tox-icon {
+    background-image: url('../../../../public/images/icons/clear_format.svg');
+}
+
+.tox .tox-toolbar,
+.tox .tox-toolbar__overflow,
+.tox .tox-toolbar__primary {
+    background-color: $background-toolbar-tinimce !important;
+}
+
+.tox-editor-header {
+    box-shadow: none !important;
+    padding: 0 !important;
+}

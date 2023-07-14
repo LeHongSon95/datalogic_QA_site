@@ -1,0 +1,29 @@
+.nav-box {
+  margin-bottom: 2.5rem;
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  .form-select {
+	padding: 0.25rem 1rem;
+	font-size: $font-size-second;
+  }
+  
+  &__left {
+	.form-select {
+	  width: 60px;
+	  display: inline-block;
+	}
+	
+	span {
+	  display: inline-block;
+	  margin-left: 6px;
+	  font-size: $font-size-second;
+	}
+  }
+  
+  &__right {
+	.form-select {
+	  width: 160px;
+	}
+  }
+}

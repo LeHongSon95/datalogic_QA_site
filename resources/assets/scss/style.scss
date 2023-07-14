@@ -1,0 +1,57 @@
+/*
+Template Name: DataLogic
+Theme URI: https://beetechsoft.com/
+Author: BeeTechSoft
+Author URI: https://www.facebook.com/BeeTechSoft
+Version: 1.0.0
+Description: Template DataLogic
+*/
+
+/**
+* Table of Contents:
+*
+# General
+# Header
+# Option Change Font Size
+# Nav Box
+# Sidebar
+# Footer
+* -----------------------------------------------------------------------------
+*/
+
+@import "variables-site/variables";
+
+/**
+# General
+-----------------------------------------------------------------------------*/
+@import "general";
+
+/**
+# Header
+-----------------------------------------------------------------------------*/
+@import "componets/header";
+
+/**
+# Option Change Font Size
+-----------------------------------------------------------------------------*/
+@import "componets/option-change-font-size";
+
+/**
+# Nav Box
+-----------------------------------------------------------------------------*/
+@import "componets/nav-box";
+
+/**
+# Sidebar
+-----------------------------------------------------------------------------*/
+@import "componets/sidebar";
+
+/**
+# Footer
+-----------------------------------------------------------------------------*/
+@import "componets/footer";
+
+/**
+# tinymce_custom
+-----------------------------------------------------------------------------*/
+@import "componets/tinymce_custom";

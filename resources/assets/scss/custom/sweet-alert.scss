@@ -1,0 +1,95 @@
+.sweet-alert-error-list {
+    height: 300px;
+    overflow-y: scroll;
+    text-align: left;
+    font-size: 1.4rem;
+
+    li {
+        color: red;
+    }
+}
+
+.page-template {
+    .swal2-container.swal2-center>.swal2-popup {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+        width: 1000px;
+        max-width: 90%;
+    }
+    
+    .swal2-html-container {
+        font-size: 1.8rem
+    }
+    
+    .swal2-title {
+        position: relative;
+        max-width: 100%;
+        margin: 0;
+        padding: 0.8em 1em 0;
+        color: black;
+        height: 70px;
+        font-size: 25px;
+        margin-top: 42px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: none;
+        word-wrap: break-word;
+    }
+    
+    .swal2-styled.swal2-confirm {
+        border: 0;
+        border-radius: 0.25em;
+        background: initial;
+        width: 130px;
+        padding: 8px;
+        height: 45px;
+        background: #F0F0F0 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 5px;
+        opacity: 1;
+        color: white;
+        background-color: #7066e0;
+        font-size: 20px;
+    }
+    
+    .swal2-actions {
+        display: flex;
+        z-index: 1;
+        flex-direction: row-reverse;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: 1.25em auto 0;
+        padding: 0;
+    }
+    
+    .swal2-styled.swal2-cancel {
+        width: 130px;
+        height: 45px;
+        padding: 8px;
+        background: #F11B0B 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 5px;
+        opacity: 1;
+        background: initial;
+        background-color: #6e7881;
+        color: black;
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    .swal2-close {
+        display: flex;
+        width: 70px;
+        font-size: 40px;
+        height: 70px;
+        color: black;
+    }
+}

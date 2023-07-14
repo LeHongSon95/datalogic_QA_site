@@ -1,0 +1,94 @@
+@import "../variables-site/variables";
+
+body {
+	&.font-size-big {
+		font-size: $font-size-body-big;
+
+		h1 {
+			font-size: $h1-font-size-big;
+		}
+
+		h2 {
+			font-size: $h2-font-size-big;
+		}
+
+		h3 {
+			font-size: $h3-font-size-big;
+		}
+
+		h4 {
+			font-size: $h4-font-size-big;
+		}
+
+		h5 {
+			font-size: $h5-font-size-big;
+		}
+
+		h6 {
+			font-size: $h6-font-size-big;
+		}
+
+		button,
+		.widget-favorite__link span.text {
+			font-size: $font-size-body-big;
+		}
+
+		.wrapper__search .form-search-qa .group-search .top__left .text,
+		.custom-form-check .form-check-label,
+		.form-select,
+		.nav-box__left span,
+		.navigation .pagination .page-item__link,
+		.site-qa .wrapper .list-qa__item .cate {
+			font-size: $font-size-second-big;
+		}
+
+		.site-qa .wrapper .list-qa__item .title,
+		.site-qa .wrapper .list-qa__item .content .content__left {
+			font-size: $h6-font-size-big;
+		}
+
+    .widget .widget-title.line {
+      font-size: $h5-font-size-big;
+    }
+
+		.list-group-radio {
+			.form-check-input {
+				&[type="radio"] {
+					&:checked {
+						~label {
+							&:after {
+								top: 8px;
+							}
+						}
+					}
+				}
+			}
+
+			.form-check-label {
+				&:before {
+					top: 5px;
+				}
+			}
+
+      @media (max-width: 1199px) {
+        .form-check-input {
+          &[type="radio"] {
+            &:checked {
+              ~label {
+                &:after {
+                  top: 6px;
+                }
+              }
+            }
+          }
+        }
+  
+        .form-check-label {
+          &:before {
+            top: 3px;
+          }
+        }
+      }
+		}
+	}
+}

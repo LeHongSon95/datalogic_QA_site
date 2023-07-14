@@ -1,0 +1,105 @@
+<?php
+return [
+	'category' => 'カテゴリ',
+	'all' => 'すべて',
+	'subject' => ':count件',
+	'keyword_search' => 'キーワード検索',
+	'change_font_size' => '文字サイズ変更',
+	'change_font_size_big' => '大',
+	'change_font_size_normal' => '中',
+	'change_font_size_small' => '小',
+	'featured_keywords' => '注目のキーワード',
+	'recently_viewed_keywords' => '最近見たキーワード',
+	'related_qa' => '関連するQ&A',
+	'applicable' => ':count件が該当しています',
+	'showing_item_page' => '件 / ページ を表示中',
+	'display_number' =>'表示数',
+	'note_search' => 'スペースで区切って複数語検索が可能です',
+	'help_search' => 'キーワードの間に半角スペースを入れるとAND検索になります。キーワードの間に"│"を入れるとOR検索になります。',
+	'title_search' => 'タイトル検索',
+	'full_text_search' => '全文検索',
+	'show_detail' => '詳細を表示',
+	'order_registration_asc' => '登録順',
+	'order_registration_desc' => '登録順',
+	'order_reading' => '読み上げ順',
+	'order_number_of_favorites' => 'お気に入り数順',
+	'update_date' => '更新日時',
+	'btn_add_favorite' => 'お気に入りに追加',
+
+	// QA detail
+	'questionnaire_status' => [
+		'solved' => '解決した',
+		'not_resolved' => '解決しなかった'
+	],
+	'questionnaire' => [
+		'title' => 'アンケート',
+		'content_label' => 'ご意見・ご感想をお寄せください。',
+		'note' => '送信専用フォームです。お問い合わせにはお答えできません。',
+		'btn_send' => '送信する'
+	],
+	//
+	'breadcrumb' => [
+		'frontend' => [
+			'top_page' => 'Q&A検索',
+			'favorite' => 'お気に入りのQ&A',
+		],
+		'backend' => [
+			'faq' => 'FAQ登録',
+			'analysis' => '分析',
+			'setting' => '設定',
+			'questionnaire' => '受信BOX',
+			'dashboard' => 'Q&A追加',
+		]
+	],
+
+	'Keyword_setting' => 'キーワード設定',
+	'qa_recommended_settings' => 'QAおすすめ設定',
+	'btn_delete' => '削除',
+	'btn_create' => '追加',
+	'qa_recommend' => 'おすすめQ&A',
+	'change_number_of_characters_question' => '質問入力フォームの文字数変更',
+	'change_number_of_characters_answer' => '回答入力フォームの文字数変更',
+	'change_number_of_recently_viewed_keywords' => '最近見たキーワードの数変更',
+	'save' => '保存',
+	'related_question' => '関連Q＆A',
+	'dashboard' => [
+		'question' => '質問',
+		'answer' => '回答',
+		'tag' => 'ハッシュタグ',
+		'status' => 'ステータス',
+		'category' => 'フォルダ',
+		'related_question' => '関連Q＆A',
+		'note' => 'メモ',
+		'question_note' => '左の「追加ボタン」から、ユーザーが質問すると予想される文章を複数入力してください。',
+		'status_change' => '直ちにステータスを変更（ON/OFF)'
+	],
+	'btn_cancle' => 'キャンセル',
+	'btn_create_qa' => '登録する',
+	'import' => [
+		'validate' => [
+			'required' => 'Row :key : :name field is required.',
+			'check_coincidented' => 'Row :key : :name has been coincidented.',
+			'check_value_status' => 'Row :key : Status field has value is ON or OFF.',
+			'check_max_length' => 'Row :key : :name field must not be greater than :maxLength characters.',
+			'check_not_exist' => 'Row :key : :name is invalid.',
+			'check_exist' => 'Row :key : :name has already exist.',
+			'max_row_count' => 'Row :key : :name max :max row.',
+		],
+	],
+	'status_item' => 'ステータス項目',
+	'question_item' => '質問項目',
+	'question' => '質問',
+	'answer_item' => '回答項目',
+	'answer' => '回答',
+	'hashtag_item' => 'ハッシュタグ項目',
+	'hashtag' => 'ハッシュタグ',
+	'category_item' => 'カテゴリー項目',
+	'category' => 'カテゴリー',
+	'similar_question' => '関連質問',
+	'note' => 'メモ',
+	'same_question' => '同じ質問',
+	'error_import' => ':key行目: :content',
+	'import_success' => '質問入力成功しました。',
+	'import_error' => '質問入力失敗しました。',
+	'question_related' => '関連Q＆A'
+];

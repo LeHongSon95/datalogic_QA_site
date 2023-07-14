@@ -1,0 +1,100 @@
+@import "../variables-site/variables";
+
+body {
+  &.font-size-small {
+    font-size: $font-size-body-small;
+
+    h1 {
+      font-size: $h1-font-size-small;
+    }
+
+    h2 {
+      font-size: $h2-font-size-small;
+    }
+
+    h3 {
+      font-size: $h3-font-size-small;
+    }
+
+    h4 {
+      font-size: $h4-font-size-small;
+    }
+
+    h5 {
+      font-size: $h5-font-size-small;
+    }
+
+    h6 {
+      font-size: $h6-font-size-small;
+    }
+
+    button {
+      font-size: $font-size-body-small;
+    }
+
+    // top page
+
+    .wrapper__search .form-search-qa .group-search .top__left .text,
+    .custom-form-check .form-check-label,
+    .form-select,
+    .nav-box__left span,
+    .navigation .pagination .page-item__link,
+    .site-qa .wrapper .list-qa__item .cate {
+      font-size: $font-size-second-small;
+    }
+
+    .site-qa .wrapper .list-qa__item .title,
+    .site-qa .wrapper .list-qa__item .content .content__left {
+      font-size: $h6-font-size-small;
+    }
+
+    .site-qa .wrapper__search .form-search-qa .group-search .top__left .btn-tooltip {
+      font-size: $h3-font-size-small;
+    }
+
+    .widget-favorite__link span.text {
+      font-size: $h4-font-size-small;
+    }
+
+    // QA detail 
+    .site-qa-detail .qa-post .title,
+    .site-qa-detail .qa-post .content,
+    .site-qa-detail .btn-add-favorite {
+      font-size: $font-size-body-small;
+    }
+
+    .site-qa-detail .qa-post .heading {
+      font-size: $font-size-second-small;
+    }
+
+    .site-qa-detail .btn-add-favorite .material-icons {
+      font-size: $h5-font-size-small;
+    }
+
+    // radio
+    .list-group-radio {
+      .form-check-input {
+        &[type="radio"] {
+          &:checked {
+            ~label {
+              &:after {
+                top: 4px;
+                left: 2px;
+                width: 13px;
+                height: 13px;
+              }
+            }
+          }
+        }
+      }
+
+      .form-check-label {
+        &:before {
+          width: 17px;
+          height: 17px;
+          top: 2px;
+        }
+      }
+    }
+  }
+}

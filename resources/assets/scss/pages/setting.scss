@@ -1,0 +1,291 @@
+@import "../variables-site/variables";
+
+.btn.btn-custom {
+  border: 1px solid $border-color-four;
+  background-color: $background-third;
+  @include transition();
+
+  &:hover {
+    color: $color-submit-hover;
+    border-color: $color-submit-hover;
+    background-color: $color-white;
+  }
+}
+
+.site-setting {
+  min-height: calc(100vh - 160px);
+
+  .select2-container {
+    &--default {
+      width: unset;
+      max-width: 100%;
+      .select2-selection {
+        display: flex;
+        padding: 0 1.5rem 0.5rem 1rem;
+        min-height: 40px;
+        align-items: center;
+
+        .select2-selection {
+          &__choice {
+            padding: 0.3rem 3.5rem 0.3rem 1.5rem;
+            border: 1px solid $color-third;
+            border-radius: 18px;
+            background-color: transparent;
+
+            button {
+              padding: 0;
+              left: auto;
+              top: 50%;
+              right: 8px;
+              color: $color-white;
+              line-height: 20px;
+              font-size: 1.4rem;
+              @include square(20px, 50%);
+              background-color: $color-third;
+              @include transition();
+              transform: translateY(-50%);
+
+              &:hover {
+                color: $color-white;
+                background-color: $background-primary;
+              }
+
+              ~span {
+                padding: 0;
+              }
+            }
+          }
+
+          &__rendered {
+            margin: 0;
+          }
+        }
+
+        &__arrow {
+          height: 100%;
+        }
+      }
+    }
+
+    .select2-search {
+      &--inline {
+        padding-top: 0.5rem;
+
+        .select2-search {
+          &__field {
+            margin-top: 0;
+            min-height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .form-featured-keywords {
+    .note {
+      margin-bottom: 1rem;
+      @include grid-columns(1rem 2rem, 325px 1fr);
+
+      @media (max-width: 768px) {
+        @include grid-columns(1rem 2rem, 210px 1fr);
+      }
+    }
+
+    &__group {
+      margin-bottom: 3rem;
+    }
+
+    &.form-qa-recomended {
+      .note {
+        @include grid-columns(2rem, 540px 1fr);
+
+        @media (max-width: 768px) {
+          @include grid-columns(2rem, 245px 1fr);
+        }
+      }
+
+      .widget {
+        padding: 0;
+      }
+    }
+  }
+
+  .btn-add-question,
+  .btn-delete {
+    padding: 0.55rem 3.1rem;
+    border-radius: 5px;
+  }
+
+  .widget {
+    margin-bottom: 0.5rem;
+    padding: 2rem 0;
+    border: 1px solid $border-color-four;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .widget-title {
+      padding: 0 0 1.9rem 0;
+      margin-bottom: 1.6rem;
+      margin-left: 1.5rem;
+      display: inline-block;
+      width: 26rem;
+      font-weight: bold;
+
+      &.line {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $background-primary;
+      }
+    }
+
+    &__body {
+      padding: 0 1.9rem;
+    }
+
+    &__wrap {
+      @include grid-columns(2rem, 540px 1fr);
+
+      @media (max-width: 768px) {
+        @include grid-columns(2rem, 245px 1fr);
+      }
+    }
+
+    .connected-sortable {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    ul {
+      @include reset-list();
+
+      li {
+        position: relative;
+        padding: 2rem 1.5rem;
+        font-weight: bold;
+        font-size: $font-size-four;
+        margin: 0;
+        cursor: pointer;
+
+        &.active {
+          color: $color-link;
+        }
+
+        &:hover {
+          background-color: $background-four;
+
+          &.active {
+            color: $color-link;
+          }
+        }
+
+        &.draggable-item {
+          min-width: 75px;
+          font-weight: normal;
+          padding: 0 1.1rem;
+          margin: 0 1.6rem 2.4rem 0;
+          line-height: 3.6rem;
+          background-color: $background-second;
+          text-align: center;
+
+          cursor: pointer;
+          transition: box-shadow 0.25s ease-in-out;
+          transition: background-color 0.4s ease-in-out;
+
+          &.active {
+            color: $color-white;
+            background-color: $background-primary;
+          }
+
+          &:hover {
+            color: $color-white;
+            background-color: $background-primary;
+
+            &.active {
+              color: $color-white;
+            }
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 2.4rem;
+          }
+        }
+
+        /* styles during drag */
+        &.draggable-item.ui-sortable-helper {
+          box-shadow: 0 0 8px rgba(53, 41, 41, 0.8);
+          transform: scale(1.015);
+          z-index: 100;
+
+          &.active {
+            color: $color-white;
+            background-color: $background-primary;
+          }
+        }
+
+        &.draggable-item.ui-sortable-placeholder {
+          -moz-box-shadow: inset 0 0 10px $color-primary;
+          -webkit-box-shadow: inset 0 0 10px $color-primary;
+          box-shadow: inset 0 0 10px $color-primary;
+        }
+      }
+    }
+  }
+
+  .widget-keywords {
+    .btn-keywords {
+      max-height: 3.4rem;
+    }
+  }
+  .recommended-title {
+    margin-top: 5rem;
+  }
+
+  .mt-70 {
+    margin-top: 70px;
+  }
+
+  .search-button_end {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .flex-all {
+      padding: 20px;
+      padding-right: 35px;
+      padding-left: 0;
+      width: 50%;
+      p {
+        font-weight: 700;
+        font-size: 1.8rem;
+      }
+
+      .d-flex {
+        input {
+          padding: 10px;
+          width: 100%;
+          max-width: 325px;
+          height: 45px;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border: 1px solid #aaaaaa;
+          border-radius: 5px;
+          opacity: 1;
+        }
+
+        button {
+          margin-left: 20px;
+          width: 90px;
+          height: 45px;
+          /* UI Properties */
+          opacity: 1;
+          flex-shrink: 0;
+
+          p {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
